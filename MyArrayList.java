@@ -46,6 +46,14 @@ public class MyArrayList {
        numElements++;
    }
 
+
+   public int getIndex(int index){
+        if(data.length<index && data.length>=index){
+            return -1;
+        }
+        return data[index];
+   }
+
    //Grow
     private void Grow(){
         //create new array with X extra slot
